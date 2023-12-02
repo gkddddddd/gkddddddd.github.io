@@ -52,15 +52,20 @@
 		<div id="text"></div>
 		<!--end text-->
 		<embed src="music.mp3" hidden="true"/>
-	<button onclick="playAudio()">播放音频</button>
-<audio id="backgroundAudio" src="music.mp3" preload="auto"></audio>
+	
+		<div style="position: absolute; top: 40px; left: 40px;">
+			<button onclick="playAudio()" style="font-size: 30px; padding: 10px;">播放音频</button>
+		</div>
 
-<script>
-   function playAudio() {
-      var audio = document.getElementById('backgroundAudio');
-      audio.play();
-   }
-</script>
+		<audio id="backgroundAudio" src="music.mp3" preload="auto"></audio>
+
+		<script>
+			function playAudio() {
+				var audio = document.getElementById('backgroundAudio');
+				audio.play();
+			}
+		</script>
+
 
 		<script src="js/jquery.min.js"></script>
 		<!--雪花-->
