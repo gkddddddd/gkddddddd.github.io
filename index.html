@@ -52,13 +52,16 @@
 		<div id="text"></div>
 		<!--end text-->
 		<embed src="music.mp3" hidden="true"/>
-		<audio id="backgroundAudio" src="music.mp3" preload="auto"></audio>
+		<button onclick="playAudio()">播放音频</button>
+<audio id="backgroundAudio" src="music.mp3" preload="auto"></audio>
 
-		<script>
-			setTimeout(function() {
-				document.getElementById('backgroundAudio').play();
-			}, 5000); // 延迟5秒钟后播放
-		</script>
+<script>
+   function playAudio() {
+      var audio = document.getElementById('backgroundAudio');
+      audio.play();
+   }
+</script>
+
 		<script src="js/jquery.min.js"></script>
 		<!--雪花-->
 		<script src="js/snow.js"></script>
