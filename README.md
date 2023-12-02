@@ -1,1 +1,0 @@
-# gkddddddd.github.io
